@@ -30,3 +30,12 @@ outputs = model.generate(tokenizer(inputs, return_tensors="pt", padding=True).in
 
 # Print the translation results
 print(tokenizer.batch_decode(outputs, skip_special_tokens=True))
+```
+
+## Training
+The model has been trained on 4.2 million text pairs from various domains.
+
+![image](https://github.com/user-attachments/assets/4a941b03-5dee-454f-9b8a-4ef7e2dfb024)
+
+I have crawled over 4,000 English-Vietnamese bilingual sentences on the topic of healthcare to train this model. The training process is in the file Training.py.
+
